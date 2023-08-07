@@ -1,0 +1,24 @@
+:root{
+
+  // // Colors
+  // Primary
+
+--color-primary: hsl(215, 51%, 70%);
+--color-secondary: hsl(178, 100%, 50%);
+--color-secondary-transparent: rgba(0, 255, 247,.5);
+
+// Neutral
+
+--color-main-BG: hsl(217, 54%, 11%);
+--color-card-BG: hsl(216, 50%, 16%);
+--color-horizontal-line: hsl(215, 32%, 27%);
+--color-white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--color-main-BG);
+}
+
+

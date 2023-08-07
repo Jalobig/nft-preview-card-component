@@ -1,0 +1,109 @@
+.card {
+  background-color: var(--color-card-BG);
+  max-width: 20rem;
+  padding: 1.5rem;
+  margin: 3rem auto;
+  border-radius: 1rem;
+
+  &__img__group {
+    position: relative;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  &__img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  &__description {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  &__crypto,
+  &__time {
+    display: flex;
+    align-items: center;
+    span {
+      display: block;
+      width: 5rem;
+      margin-left: 0.3rem;
+    }
+  }
+  &__icon {
+    height: 1.1rem;
+  }
+  &__crypto {
+    color: var(--color-secondary);
+  }
+  &__time {
+    color: var(--color-primary);
+  }
+  &__avatar__row {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    span {
+      color: var(--color-primary);
+      margin-left: 1rem;
+    }
+  }
+  &__avatar {
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    width: 2rem;
+  }
+}
+
+hr {
+  border: 1px solid var(--color-horizontal-line);
+}
+
+button {
+  color: var(--color-white);
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s;
+  &:hover {
+    color: var(--color-secondary);
+    cursor: pointer;
+  }
+}
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-secondary-transparent);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: all .3s;
+  &:hover{
+      opacity: 1;
+      cursor: pointer;
+
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4rem;
+
+  }
+
+}
